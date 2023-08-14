@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+module.exports = {
+  reactStrictMode: true,
+  experimental: {
+    appDir: true,
+  },
+  images: {
+    domains: [
+      "swaiimagegenerator.blob.core.windows.net",
+      "links.papareact.com",
+    ],
+  },
+};
